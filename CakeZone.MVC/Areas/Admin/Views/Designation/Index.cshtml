@@ -1,0 +1,53 @@
+﻿@model List<Designation>
+@if(TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["SuccesMessage"] != null)
+{
+    <div class="alert alert-succes">
+        @TempData["SuccesMessage"]
+    </div>
+}
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <h2>Designation List</h2>
+        <a class="btn btn-primary" asp-controller="Designation" asp-action="Create">Create</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Created Time</th>
+                <th colspan="3" scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Name</td>
+                    <td>@item.CreatedTime</td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Designation" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                        <a class="btn btn-danger" asp-controller="Designation" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        @if (item.IsDeleted)
+                        {
+                            <a class="btn btn-info" asp-controller="Designation" asp-action="Show" asp-route-id="@item.Id">Show</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-secondary" asp-controller="Designation" asp-action="Hide" asp-route-id="@item.Id">Hide</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

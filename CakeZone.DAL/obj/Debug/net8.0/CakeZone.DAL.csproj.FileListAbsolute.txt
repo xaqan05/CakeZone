@@ -1,0 +1,17 @@
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.DAL.deps.json
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.DAL.runtimeconfig.json
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.DAL.dll
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.DAL.pdb
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.CORE.dll
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\bin\Debug\net8.0\CakeZone.CORE.pdb
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.csproj.AssemblyReference.cache
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.AssemblyInfoInputs.cache
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.AssemblyInfo.cs
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.csproj.CoreCompileInputs.cache
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.csproj.CopyComplete
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.dll
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\refint\CakeZone.DAL.dll
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.pdb
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\CakeZone.DAL.genruntimeconfig.cache
+C:\Users\II novbe\Desktop\Exam\CakeZone\CakeZone.DAL\obj\Debug\net8.0\ref\CakeZone.DAL.dll

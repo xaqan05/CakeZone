@@ -1,0 +1,39 @@
+﻿@model UpdateChefVM
+
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <h2>Update Chef</h2>
+        <a class="btn btn-primary" asp-controller="Chef" asp-action="Index">Return List</a>
+    </div>
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="FullName">Full Name*</label>
+            <input value="@Model.FullName" asp-for="FullName" class="form-control" placeholder="Enter Full Name">
+            <span asp-validation-for="FullName" class="form-text text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DesignationId">Designation*</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" asp-for="DesignationId">
+                <option selected disabled>Select Designation</option>
+                @if (ViewBag.Designations != null)
+                {
+                    @foreach (var item in ViewBag.Designations)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="DesignationId" class="form-text text-danger"></span>
+        </div>
+        <div>
+            <img width="80" src="~/imgs/chef/@Model.ExistImageUrl" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Image">Image*</label>
+            <input asp-for="Image" class="form-control>
+            <span asp-validation-for="Image" class="form-text text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+

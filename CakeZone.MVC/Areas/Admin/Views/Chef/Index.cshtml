@@ -1,0 +1,52 @@
+﻿@model List<Chef>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <h2>Chef List</h2>
+        <a class="btn btn-primary" asp-controller="Chef" asp-action="Create">Create</a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Name</th>
+                <th scope="col">Designation</th>
+                <th scope="col">Created Time</th>
+                <th colspan="3" scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <th scope="row">
+                        <img width="50" src="~/imgs/chef/@item.ImageUrl" />
+                    </th>
+                    <td>@item.FullName</td>
+                    <td>@item.Designation?.Name</td>
+                    <td>@item.CreatedTime</td>
+                    <td>
+                        <a class="btn btn-warning" asp-controller="Chef" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                        <a class="btn btn-danger" asp-controller="Chef" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        @if (item.IsDeleted)
+                        {
+                            <a class="btn btn-info" asp-controller="Chef" asp-action="Show" asp-route-id="@item.Id">Show</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-secondary" asp-controller="Chef" asp-action="Hide" asp-route-id="@item.Id">Hide</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

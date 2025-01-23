@@ -1,0 +1,15 @@
+﻿@model UpdateDesignationVM
+<div class="container">
+    <div class="d-flex justify-content-between">
+        <h2>Update Designation</h2>
+        <a class="btn btn-primary" asp-controller="Designation" asp-action="Index">Return List</a>
+    </div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Name">Name*</label>
+            <input value="@Model.Name" asp-for="Name" class="form-control" placeholder="Enter name">
+            <span asp-validation-for="Name" class="form-text text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
